@@ -1,0 +1,12 @@
+<div *ngIf="!incorrectId">
+  <h1>
+    {{ id }}
+  </h1>
+  <p>
+    {{ attributes }}
+  </p>
+  <img [src]="image" alt="surement un singe immonde" />
+</div>
+<div *ngIf="incorrectId">
+  Incorrect id
+</div>

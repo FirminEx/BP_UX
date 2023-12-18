@@ -1,0 +1,12 @@
+<h1>{{ address }}</h1>
+<div *ngFor="let token of tokens">
+  <h2>{{ token.name }}</h2>
+  <em>
+    {{ token.description }}
+  </em>
+  <p>
+    {{ mapAttribute(token.attributes) }}
+  </p>
+  <img [src]="token.image" [ngStyle]="{ width: '200px', height: '200px' }" />
+</div>
+<p>{{ error }}</p>

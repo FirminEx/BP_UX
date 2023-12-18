@@ -1,0 +1,9 @@
+<div *ngIf="sepoliaChainId !== this.chainId">
+  Incorrect network (Sepolia required) <a routerLink="/home">Go home</a>
+</div>
+
+<div *ngIf="sepoliaChainId === this.chainId">
+  <p>ChainId {{ chainId }}</p>
+  <p>Last block {{ lastBlock }}</p>
+  <p>User address {{ userAccounts }}</p>
+</div>
